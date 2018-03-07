@@ -1,0 +1,1739 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:doughnutontology="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology">
+        <owl:versionIRI rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology"/>
+        <rdfs:comment>This is a doughnut ontology that describes various doughnuts based on their ingredients</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#definition">
+        <rdfs:comment>The form in which the doughnut is shaped</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase">
+        <rdfs:comment>the base of the doughnut which is determined by the way it is leavened</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling -->
+
+    <owl:ObjectProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling">
+        <rdfs:comment>the filling injected into the doughnut</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping">
+        <rdfs:comment>the toppings which the doughnut is topped with</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto -->
+
+    <owl:ObjectProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto">
+        <rdfs:comment>the shape into which the doughnut is formed</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isManufacturerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isManufacturerOf"/>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy">
+        <doughnutontology:definition>the doughnut chain who sells doughnuts</doughnutontology:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Apple -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitPieces"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Fritter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Chunks of apple added to the doughnut batter</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#AppleFritter -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#AppleFritter">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Fritter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Apple"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Doughnut shaped into a fritter or holes with apple pieces baked inside</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+        <rdfs:comment>Canadian doughnut chain which sells classic doughnuts</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BavarianCream -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BavarianCream">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Cream"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitGarnish"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>A vanilla custard usually accompanied by fruit or powdered sugar</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BavarianCreamDoughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BavarianCreamDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitGarnish"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BavarianCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Dougnut filled with bavarian cream and topped with confectioners sugar or fruit garnish</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Blueberry -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Blueberry">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitPieces"/>
+        <doughnutontology:definition>Blueberries added to the batter of a doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BlueberryFilled -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BlueberryFilled">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BlueberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Doughnut filled with blueberry jelly and topped with confectioners sugar</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BlueberryJelly -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BlueberryJelly">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Jelly"/>
+        <doughnutontology:definition>A fruit compote made out of sweetened blueberries</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BostonCream -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BostonCream">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Cream"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>A vanilla custard usually accompanied with chocolate icing</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BostonCreamDoughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BostonCreamDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BostonCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Doughnut filled with boston cream and topped with chocolate icing</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutBase"/>
+        <doughnutontology:definition>A doughnut leavened with baking powder</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isManufacturerOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Doughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>This is the class of all doughnut chains located in Canada</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianMaple -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianMaple">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BostonCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#MapleIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateDip -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateDip">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring doughnut with chocolate icing and sprinkles</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateIcing -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateIcing">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing"/>
+        <doughnutontology:definition>Chocolate-flavoured icing spread onto the top of a doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolatePeanut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolatePeanut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Specialty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Peanut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring doughnut topped with chocolate icing and peanuts</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateSprinkles -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateSprinkles">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Sprinkles"/>
+        <doughnutontology:definition>Chocolate flavoured sprinkles</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Citrus -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Citrus">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Glaze"/>
+        <doughnutontology:definition>A glaze made with citrus juice</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#PopularVarieties"/>
+        <doughnutontology:definition>Traditional types of doughnuts</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicBlueberry -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicBlueberry">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Blueberry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Blueberry glazed doughnut shaped into a ring or holes</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Glaze"/>
+        <doughnutontology:definition>Traditional glaze made from powdered sugar, butter, and vanilla</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Coconut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Coconut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings"/>
+        <doughnutontology:definition>Shredded pieces of coconut which the doughnut is rolled in</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoconutDoughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoconutDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Coconut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring or doughnut holes with coconut topping</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+        <doughnutontology:definition>Canadian doughnut chain with headquarters in Toronto, Ontario</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings"/>
+        <doughnutontology:definition>Ultra-fine sugar for doughnut to be rolled in, also known as icing sugar</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+        <doughnutontology:definition>Ontario-based doughnut chain</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Cream -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Cream">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>A sweetened cream used as a filling for doughnuts</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Cruller -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Cruller">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Citrus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Twisted with a hole in the centre</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CrullerDoughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CrullerDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Citrus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Cruller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Cruller shaped or doughnut holes with either a classic or orange glaze</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Curd -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Curd">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>A curd made of fruit</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Doughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Doughnut">
+        <rdfs:comment>A deep-fried dough which is typically eaten as a dessert or as an accompaniment to coffee</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutBase -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutBase">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>This is the class of all doughnut bases</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutFillings -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutFillings">
+        <doughnutontology:definition>This is the class of all doughnut fillings</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape">
+        <doughnutontology:definition>This is the class of all doughnut shapes</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings">
+        <doughnutontology:definition>This is the class of all doughnut toppings</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Dutchie -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Dutchie">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Square shaped doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DutchieDoughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DutchieDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Dutchie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Raisin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Glazed doughnut made into dutchie or doughnut hole shapes, filled with raisins</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BlueberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Jelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Round and filled with jelly or custard</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Fritter -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Fritter">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitPieces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Imperfect rounded shape</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitGarnish -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitGarnish">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings"/>
+        <doughnutontology:definition>A slice of fruit added to the top of a doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitPieces -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitPieces">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Fritter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Pieces of fruit added to the batter of the doughnut before frying</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Glaze -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Glaze">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings"/>
+        <owl:disjointWith rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing"/>
+        <doughnutontology:definition>A thin layer of icing that coats the entire doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape"/>
+        <owl:disjointWith rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing"/>
+        <owl:disjointWith rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Sprinkles"/>
+        <doughnutontology:definition>The ball-shape comes from the centre of a ring doughnut or by a small amount of dough being fried to make miniature doughnuts for flavours not found in a ring-shaped doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Sprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>A thick layer of icing that is placed on top of the doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Jelly -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Jelly">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>A fruit compote</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#KrispyKreme -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#KrispyKreme">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+        <doughnutontology:definition>American-based doughnut company which has stores in Canada</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Lemon -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Lemon">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Curd"/>
+        <doughnutontology:definition>Lemon curd used to fill a doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#LuckysDoughnuts -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#LuckysDoughnuts">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+        <doughnutontology:definition>A doughnut chain located in British Columbia which specializes in more gourmet doughnuts</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#MapleIcing -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#MapleIcing">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing"/>
+        <doughnutontology:definition>Maple-flavoured icing, very popular in Canada</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutFillings"/>
+        <doughnutontology:definition>No filling is added to the doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Nuts -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Nuts">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings"/>
+        <doughnutontology:definition>Chopped nuts that are placed onto the top of a doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#OrangePistachio -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#OrangePistachio">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Specialty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Citrus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Pistachio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring doughnut topped with citrus glaze and pistachios</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Peanut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Peanut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Nuts"/>
+        <doughnutontology:definition>Peanut topping for doughnut, compliments chocolate well</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Pistachio -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Pistachio">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Nuts"/>
+        <doughnutontology:definition>Pistachio topping for doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#PopularVarieties -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#PopularVarieties">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Types of doughnuts that Canadians enjoy eating</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RainbowSprinkles -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RainbowSprinkles">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Sprinkles"/>
+        <doughnutontology:definition>Multi-coloured sprinkles</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Raisin -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Raisin">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#FruitPieces"/>
+        <rdfs:comment>Dehydrated grapes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Circular with a round hole in the centre</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+        <doughnutontology:definition>Popular throughout Canada with a large number of locations. Doughnut chain which originated in Thunder Bay, Ontario.</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SaltedCaramel -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SaltedCaramel">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Specialty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SaltedCaramelGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring doughnut with a salted caramel glaze</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SaltedCaramelGlaze -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SaltedCaramelGlaze">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Glaze"/>
+        <doughnutontology:definition>Glaze made with salted caramel</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SourCream -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SourCream">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Glaze"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Glaze made with sour cream</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SourCreamGlazed -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SourCreamGlazed">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#SourCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring or doughnut holes glazed with sour cream glaze</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Specialty -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Specialty">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#PopularVarieties"/>
+        <doughnutontology:definition>Gourmet doughnuts with specialty ingredients added</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Sprinkles -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Sprinkles">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutToppings"/>
+        <doughnutontology:definition>Confectionary pieces that are sprinkled onto the doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Strawberry -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Strawberry">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RainbowSprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring doughnut topped with strawberry icing and rainbow sprinkles</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryFilled -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryFilled">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Doughnut filled with strawberry jelly and topped with confectioners sugar</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryIcing -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryIcing">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing"/>
+        <doughnutontology:definition>Strawberry-flavoured icing spread onto the top of a doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryJelly -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#StrawberryJelly">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Jelly"/>
+        <doughnutontology:definition>A fruit compote made out of sweetened strawberries</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CanadianDoughnutChains"/>
+        <doughnutontology:definition>One of Canada&apos;s most popular doughnut chains</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#VanillaDip -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#VanillaDip">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RainbowSprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#VanillaIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Ring doughnut with vanilla icing and some multi-coloured sprinkles</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#VanillaIcing -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#VanillaIcing">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#Icing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#ChocolateSprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <doughnutontology:definition>Vanilla-flavoured icing spread onto the top of a doughnut</doughnutontology:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut -->
+
+    <owl:Class rdf:about="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#YeastDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.doughnuts.org/moonstick/ontologies/2018/2/doughnutontology#DoughnutBase"/>
+        <doughnutontology:definition>Doughnut leavened with yeast</doughnutontology:definition>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
